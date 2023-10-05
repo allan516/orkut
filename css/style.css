@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Hello Angel';
+    src: url('../fonte/Hello\ Angel.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font: 'Hello Angel';
+    --cor1: #BF1471;
+    --cor2: #D5E6F5;
+    --cor3: #049DD9;
+    --cor4: #049DBF;
+    --cor5: #3789A6;
+}
+
+/* header configurations
+---------------------------
+ */
+
+body {
+    background-color: var(--cor2);
+}
+
+header {
+    background-color: var(--cor3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2px;
+}
+
+nav > div > a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.font-okt {
+    font-family: var(--font);
+    color: var(--cor1);
+    font-size: 1.3em;
+    padding: 8px 15px;
+    background-color: white;
+}
+
+/* main configurations
+-------------------------
+ */
+
+ main {
+    display: flex;
+    justify-content: space-between;
+ }
+
+/* Configurando blocos do lado direito
+////////////////////////////////////////// */
+
+ .right-block {
+    width: 30vw;
+    height: 15vh;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+ }
+
+ .right-block > p {
+    padding: 5px;
+    background-color: var(--cor2);
+    margin: 20px 0;
+ }
+
+ .right-block > a {
+    text-decoration: none;
+    color: var(--cor3);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bolder;
+ }
+
+ .right-bottom {
+   height: 35vh;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+ }
+
+ .right-bottom > p {
+    padding: 5px;
+    background-color: var(--cor2);
+    margin: 20px 0;}
+
+ .right-bottom > a {
+    text-decoration: none;
+    color: var(--cor3);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bolder;
+ }
+
+ /* Configurando blocos do meio
+ ///////////////////////////////// */
+
+ .middle-block {
+    width: 55vw;
+    height: 85.6vh;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px 50px 5px 5px;
+ }
+
+ .middle-block >  h1 {
+    padding: 10px;
+ }
+
+ .middle-block >  p {
+    display: inline-block;
+    padding: 10px;
+    color: #8d8d8d;
+ }
+
+ .middle-block > p > span {
+    color: var(--cor3);
+ }
+
+ .middle-block >  p > a {
+    float: right;
+    text-decoration: none;
+    color: var(--cor3);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bolder;
+ }
+
+ .bordas {
+    width: 88%;
+    border: 1px solid lightgray;
+    padding: 10px;
+ }
+
+ /* Configurações da tabela dentro de middle-block
+ //////////////////////////////////////////////////// */
+
+ table {
+    border-collapse: collapse;
+    margin: 10px auto;
+    height: 45vh;
+    width: 45vw;
+ }
+
+ .captionLeft {
+   text-align: left;
+ }
+
+ table > caption > p {
+   display: inline-block;
+    padding: 5px 10px;
+    margin: 10px 0 0 0;
+    background-color: var(--cor5);
+    border-radius: 15px 15px 0 0;
+ }
+
+ table > tbody > tr {
+    background-color: #dff0ff;
+ }
+
+ table > tbody > tr:nth-child(even) {
+    background-color: var(--cor2);
+ }
+
+ /* Configurando blocos do lado esquerdo
+////////////////////////////////////////// */
+
+.left-block {
+   margin: 10px;
+   border-radius: 5px;
+    width: 15vw;
+    height: 83vh;
+    background-color: white;
+}
+
+.left-block > img {
+   display: block;
+   padding: 10px;
+   margin: auto;
+}
+
+.left-block > h1 {
+   padding: 10px 0 0 10px;
+   color: var(--cor3);
+}
+
+.left-block > p {
+   padding: 10px;
+   color: #8d8d8d;
+}
+
+.left-block > ul > li {
+   padding: 10px;
+}
+
+.left-block > ul > li > a {
+    text-decoration: none;
+    color: var(--cor3);
+    padding: 5px;
+    font-weight: bolder;
+ } 
+
+/* footer configurations
+--------------------------
+ */
+
+ footer {
+    background-color: white;
+    margin-top: 10px;
+ }
+
+ footer > a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--cor4);
+    padding: 10px;
+ }
