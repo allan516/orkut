@@ -192,10 +192,10 @@ nav > div > a {
     background-color: white;
 }
 
-.left-block > img {
+.left-block > picture {
    display: block;
    padding: 10px;
-   margin: auto;
+   text-align: center;
 }
 
 .left-block > h1 {
