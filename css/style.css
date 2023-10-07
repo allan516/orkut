@@ -156,9 +156,9 @@ nav > div > a {
 
  table {
     border-collapse: collapse;
-    margin: 10px auto;
-    height: 30vh;
-    width: 50vw;
+    min-width: 50vw;
+    min-height: 50vh;
+    margin: 80px auto;
  }
 
  .captionLeft {
