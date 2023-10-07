@@ -11,6 +11,10 @@
     width: 80vw;
    }
 
+   .sumirOpcoes {
+    display: none;
+   }
+
    footer > .linkOculto {
     display: none;
    }
