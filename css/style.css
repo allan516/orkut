@@ -157,8 +157,8 @@ nav > div > a {
  table {
     border-collapse: collapse;
     margin: 10px auto;
-    height: 45vh;
-    width: 45vw;
+    height: 30vh;
+    width: 50vw;
  }
 
  .captionLeft {
@@ -187,9 +187,9 @@ nav > div > a {
 .left-block {
    margin: 10px;
    border-radius: 5px;
-    width: 15vw;
-    height: 83vh;
-    background-color: white;
+   min-width: 170px;
+   height: 83vh;
+   background-color: white;
 }
 
 .left-block > picture {

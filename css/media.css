@@ -1,0 +1,37 @@
+@media  screen and (max-width: 1170px) {
+   section > .right-block, .right-bottom {
+    display: none;
+   }
+
+   .divAdireita {
+    display: none;
+   }
+
+   .middle-block {
+    width: 80vw;
+   }
+
+   footer > .linkOculto {
+    display: none;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .left-block {
+        display: none;
+    }
+
+    .middle-block {
+        width: 100vw;
+       }
+}
+
+@media screen and (max-width: 600px) {
+    .opcoesOcultas {
+        display: none;
+    }
+
+    .middle-block {
+        width: 100vw;
+    }
+}
