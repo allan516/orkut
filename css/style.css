@@ -225,11 +225,8 @@ nav > div > a {
  */
 
  footer {
-   position: absolute;
-   width: 98vw;
-   bottom: calc(100% - 142%);
    background-color: white;
-   margin-top: 10px;
+   margin-top: 50px;
  }
 
  footer > a {
