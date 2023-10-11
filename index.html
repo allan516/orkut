@@ -30,30 +30,28 @@
         </nav>
     </header>
     <main>
-        <section class="left-block">
+        <section class="left-block" id="menuLateral">
             
-
             <picture>
-                <!-- <source media="(max-width: 1450px)" srcset="img-icons/userP.jpg" type="image/jpg"> -->
                 <img src="img-icons/userP.jpg" alt="foto do usuário">
             </picture>
             <hr>
             <h1>Allan Mendes</h1>
             <p>Masculio, <br> Solteiro <br> Paraná, Brasil</p>
             <hr>
-            <ul>
-                <li><a href="#" class="sumirOpcoes">&#x1F64B; Perfil</a></li>
-                <li><a href="#" class="sumirOpcoes">&#x1F4DD; Recados</a></li>
-                <li><a href="#" class="sumirOpcoes">&#x1F4F7; Fotos</a></li>
-                <li><a href="#" class="sumirOpcoes">&#x1F4F9; Vídeos</a></li>
-                <li> <a href="#" class="sumirOpcoes">&#x2B50; Depoimentos</a></li>
+            <ul class="sumirOpcoes" id="sumir">
+                <li><a href="#">&#x1F64B; Perfil</a></li>
+                <li><a href="#">&#x1F4DD; Recados</a></li>
+                <li><a href="#">&#x1F4F7; Fotos</a></li>
+                <li><a href="#">&#x1F4F9; Vídeos</a></li>
+                <li> <a href="#">&#x2B50; Depoimentos</a></li>
             </ul><br><hr class="sumirOpcoes">
             <h3 class="sumirOpcoes">Apps</h3>
-            <ul>
-                <li><a href="#" class="sumirOpcoes">&#x2795; adicionar apps</a></li>
-                <li><a href="#" class="sumirOpcoes">&#x1F4F0; listas</a></li>
-                <li><a href="#" class="sumirOpcoes">&#x1F4BB; atualizações</a></li>
-                <li><a href="#" class="sumirOpcoes">&#x1F527; configurações</a></li>
+            <ul class="sumirOpcoes">
+                <li><a href="#">&#x2795; adicionar apps</a></li>
+                <li><a href="#">&#x1F4F0; listas</a></li>
+                <li><a href="#">&#x1F4BB; atualizações</a></li>
+                <li><a href="#">&#x1F527; configurações</a></li>
             </ul>
         </section>
 
@@ -135,8 +133,21 @@
     </footer>
 
     <script>
-        function menu() {
-        }
+         function menu() {
+             let mostrarMenu = document.getElementById('menuLateral');
+             let opcoesDoMenu = document.getElementById('sumir');
+    
+             if (mostrarMenu.style.display === 'none') {
+                 mostrarMenu.style.display = 'block';
+                 mostrarMenu.style.position = 'absolute';
+                 opcoesDoMenu.style.display = 'block';
+            } else {
+                 mostrarMenu.style.display = 'none';
+                }
+         }
+
     </script>
+    
+    
 </body>
 </html>
