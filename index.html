@@ -137,18 +137,19 @@
             let mostrarMenu = document.getElementById('menuLateral');
             let opcoesDoMenu = document.getElementById('sumir');
 
-            if(window.innerWidth > window.innerHeight){
+            if(window.innerWidth > window.innerHeight && window.innerWidth < 915){
 
                 opcoesDoMenu.style.display = 'none';
                 mostrarMenu.style.display = 'block';
                 mostrarMenu.style.position = 'static';
+                mostrarMenu.style.border = 'none';
 
             } else if (window.innerWidth >= 768) {
 
                 mostrarMenu.style.display = 'block';
                 mostrarMenu.style.position = 'static';
                 opcoesDoMenu.style.display = 'block';
-                
+
                 } else {
 
                 mostrarMenu.style.display = 'none';
@@ -163,8 +164,10 @@
     
               if (mostrarMenu.style.display === 'none') {
                   mostrarMenu.style.display = 'block';
+                  mostrarMenu.style.border = '1px solid #00000088';
                   mostrarMenu.style.position = 'absolute';
                   opcoesDoMenu.style.display = 'block';
+
              } else {
                   mostrarMenu.style.display = 'none';
                  }

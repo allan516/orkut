@@ -119,8 +119,8 @@ header > nav > .divAesquerda > .material-symbols-outlined {
 
  .middle-block {
     width: 55vw;
-    height: 100vh;
-    background-color: white;
+    height: 100vh; 
+    background-color: white;                
     margin: 10px;
     border-radius: 5px 50px 5px 5px;
  }
@@ -184,7 +184,6 @@ header > nav > .divAesquerda > .material-symbols-outlined {
  table > tbody > tr:nth-child(even) {
     background-color: var(--cor2);
  }
-
  /* Configurando blocos do lado esquerdo
 ////////////////////////////////////////// */
 
