@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Orkut - Perfil</title>
 </head>
-<body>
+<body onresize="alterouTamanho()">
     <header>
         <nav>
             <div class="divAesquerda">
@@ -133,21 +133,35 @@
     </footer>
 
     <script>
-         function menu() {
+          function alterouTamanho() {
+            let mostrarMenu = document.getElementById('menuLateral');
+            let opcoesDoMenu = document.getElementById('sumir');
+
+            if (window.innerWidth >= 768) {
+                mostrarMenu.style.display = 'block';
+                mostrarMenu.style.position = 'static';
+                opcoesDoMenu.style.display = 'block';
+            } else {
+                mostrarMenu.style.display = 'none';
+                opcoesDoMenu.style.display = 'none';
+            }
+          }
+
+
+          function menu() {
              let mostrarMenu = document.getElementById('menuLateral');
              let opcoesDoMenu = document.getElementById('sumir');
     
-             if (mostrarMenu.style.display === 'none') {
-                 mostrarMenu.style.display = 'block';
-                 mostrarMenu.style.position = 'absolute';
-                 opcoesDoMenu.style.display = 'block';
-            } else {
-                 mostrarMenu.style.display = 'none';
-                }
-         }
+              if (mostrarMenu.style.display === 'none') {
+                  mostrarMenu.style.display = 'block';
+                  mostrarMenu.style.position = 'absolute';
+                  opcoesDoMenu.style.display = 'block';
+             } else {
+                  mostrarMenu.style.display = 'none';
+                 }
+          }
 
     </script>
-    
     
 </body>
 </html>
