@@ -137,14 +137,23 @@
             let mostrarMenu = document.getElementById('menuLateral');
             let opcoesDoMenu = document.getElementById('sumir');
 
-            if (window.innerWidth >= 768) {
+            if(window.innerWidth > window.innerHeight){
+
+                opcoesDoMenu.style.display = 'none';
+                mostrarMenu.style.display = 'block';
+                mostrarMenu.style.position = 'static';
+
+            } else if (window.innerWidth >= 768) {
+
                 mostrarMenu.style.display = 'block';
                 mostrarMenu.style.position = 'static';
                 opcoesDoMenu.style.display = 'block';
-            } else {
+                
+                } else {
+
                 mostrarMenu.style.display = 'none';
                 opcoesDoMenu.style.display = 'none';
-            }
+                }
           }
 
 
