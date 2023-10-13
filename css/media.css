@@ -26,10 +26,14 @@
     table {
         display: none;
     }
+
+    .sumirOpcoes{
+        display: none;
+    }
     
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 768px) {
 
     header > nav > .divAesquerda > .material-symbols-outlined {
         display: inline-block; 
