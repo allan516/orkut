@@ -144,16 +144,20 @@
                 mostrarMenu.style.position = 'static';
                 mostrarMenu.style.border = 'none';
 
-            } else if (window.innerWidth > 768) {
+            } else if (window.innerWidth > 768 && innerHeight <= 653) {
 
                 mostrarMenu.style.display = 'block';
                 mostrarMenu.style.position = 'static';
-                opcoesDoMenu.style.display = 'block';
+                opcoesDoMenu.style.display = 'none';
                 mostrarMenu.style.border = 'none';
 
+                } else if (window.innerWidth > 768){
+                    mostrarMenu.style.display = 'block';
+                    mostrarMenu.style.position = 'static';
+                    opcoesDoMenu.style.display = 'block';
+                    mostrarMenu.style.border = 'none';   
                 } else {
-
-                mostrarMenu.style.display = 'none';   
+                    mostrarMenu.style.display = 'none';
                 }
           }
 

@@ -22,15 +22,14 @@
    }
 }
 
-@media screen and (max-height: 653px) and (orientation: landscape) {
+@media screen and (max-height: 853px) and (orientation: landscape) {
     table {
         display: none;
     }
-
-    .sumirOpcoes{
+    
+    .sumirOpcoes {
         display: none;
     }
-    
 }
 
 @media screen and (max-width: 768px) {
