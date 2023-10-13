@@ -29,7 +29,7 @@
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 915px) {
 
     header > nav > .divAesquerda > .material-symbols-outlined {
         display: inline-block; 
