@@ -54,6 +54,7 @@ nav > div > a {
 
 header > nav > .divAesquerda > .material-symbols-outlined {
    display: none; 
+   cursor: pointer;
 }
 
 /* main configurations
